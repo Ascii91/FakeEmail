@@ -38,7 +38,9 @@
         android:background="@drawable/back"
         android:ems="10"
         android:gravity="center_vertical"
-        android:hint="@string/subject" />
+        android:hint="@string/subject"
+         android:inputType="textEmailAddress"
+         />
 
     <EditText
         android:id="@+id/compose"

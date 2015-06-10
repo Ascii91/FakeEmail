@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
 
 public class MainActivity extends Activity {
 
@@ -13,6 +14,8 @@ public class MainActivity extends Activity {
 		overridePendingTransition(R.anim.activity_open_translate,
 				R.anim.activity_close_scale);
 		setContentView(R.layout.activity_main);
+	
+		getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
 	}
 
 	@Override
