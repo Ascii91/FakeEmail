@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.milos.fakeemail.MainActivity" >
+
+ 
+    <item
+        android:id="@+id/action_atach"
+        android:orderInCategory="100"
+           android:icon="@drawable/atach"
+           android:showAsAction="ifRoom"
+        android:title="@string/action_settings"/>
+    <item
+        android:id="@+id/action_send"
+        android:icon="@drawable/send"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_settings"/>
+   <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_three_dots"
+        android:title="@string/action_settings"/>
+</menu>

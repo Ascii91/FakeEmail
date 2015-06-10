@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gray"
+    tools:context="com.milos.fakeemail.MainActivity" >
+
+    <EditText
+        android:id="@+id/from"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/back"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/from"
+        android:inputType="textEmailAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/to"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height"
+        android:layout_below="@+id/from"
+        android:background="@drawable/back"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/to"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/Subject"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height"
+        android:layout_below="@+id/to"
+        android:background="@drawable/back"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/subject" />
+
+    <EditText
+        android:id="@+id/compose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/Subject"
+        android:background="@drawable/back"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="@string/compose"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>
